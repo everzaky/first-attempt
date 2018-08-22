@@ -2,8 +2,7 @@ from django.db import models
 class Price(models.Model):
     category_of_prisoed_mosh = models.PositiveSmallIntegerField()
     category = models.PositiveSmallIntegerField()
-    voltage = models.CharField(max_length=5)
-    title ="Категория: "+str(category)+"Уровень напряжения: "+str(voltage)+"Категория присоединенной мощности: "+str(category_of_prisoed_mosh)
+    title ="Категория: "+str(category)+"Категория присоединенной мощности: "+str(category_of_prisoed_mosh)
     chas0 = models.FloatField()
     chas1 = models.FloatField()
     chas2 = models.FloatField()
