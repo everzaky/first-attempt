@@ -2,7 +2,7 @@ from django.db import models
 class Price(models.Model):
     category_of_prisoed_mosh = models.PositiveSmallIntegerField()
     category = models.PositiveSmallIntegerField()
-    title ="Категория: "+str(category)+"Категория присоединенной мощности: "+str(category_of_prisoed_mosh)
+    title = models.TextField(default=1)
     chas0 = models.FloatField()
     chas1 = models.FloatField()
     chas2 = models.FloatField()
