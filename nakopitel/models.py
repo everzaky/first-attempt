@@ -28,7 +28,6 @@ class Price(models.Model):
     chas22 = models.FloatField()
     chas23 = models.FloatField()
     price_po_chas=[chas0,chas1,chas2,chas3,chas4,chas5,chas6,chas7,chas8,chas9,chas10,chas11,chas12,chas13,chas14,chas15,chas16,chas17,chas18,chas19,chas20,chas21,chas22,chas23]
-
     def __str__(self):
         return self.title
 # Create your models here.

@@ -55,8 +55,10 @@ def index(request):
                 cat=2
             else:
                 cat=3
-            #Energy_prices=[Price.objects.get(category_of_prisoed_mosh=cat, category=3).price_po_chas,Price.objects.get(category_of_prisoed_mosh=cat, category=4).price_po_chas,Price.objects.get(category_of_prisoed_mosh=cat, category=5).price_po_chas,Price.objects.get(category_of_prisoed_mosh=cat, category=6).price_po_chas]
-            con = lite.connect('db.sqlite3')
+#            #Energy_prices=[Price.objects.get(category_of_prisoed_mosh=cat, category=3).price_po_chas,Price.objects.get(category_of_prisoed_mosh=cat, category=4).price_po_chas,Price.objects.get(category_of_prisoed_mosh=cat, category=5).price_po_chas,Price.objects.get(category_of_prisoed_mosh=cat, category=6).price_po_chas]
+ #           con = lite.connect('db.sqlite3')
+  #          with con:
+   #             cur = con.execute("SELECT * FROM NAKOPITEL ") """
             return render(request,'nakopitel/main.html', {'result': 1})
     return render(request, 'nakopitel/main.html', {'result':0})
 
