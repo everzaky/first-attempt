@@ -1,10 +1,327 @@
 <!DOCTYPE html>
-<html lang="ru">
+{% load static %}
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>NeZnayuKakNazvat</title>
+    <link rel="stylesheet" href="{% static 'css/nakopitel.css' %}">
 </head>
-<body>
 
+<body>
+    <h2>Входные данные:</h2>
+    <h2>Потребление:</h2>
+    <h1>Введите почасовой профиль в кВт*ч:</h1>
+    <form method="post">
+        {% csrf_token %}
+        <table>
+            <tr>
+                <td>
+                    <label for="pot_0">за час 00:</label>
+                </td>
+
+                <td>
+                    <input type="text" name="pot_0" id="pot_0">
+                </td>
+
+                <td>
+                    <label for="pot_1">за час 01:</label>
+                </td>
+
+                <td>
+                    <input type="text" name="pot_1" id="pot_1">
+                </td>
+
+                <td>
+                    <label for="pot_2">за час 02:</label>
+                </td>
+
+                <td>
+                    <input type="text" name="pot_2" id="pot_2">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="pot_3">за час 03:</label>
+                </td>
+
+                <td>
+                    <input type="text" name="pot_3" id="pot_3">
+                </td>
+
+                <td>
+                    <label for="pot_4">за час 04:</label>
+                </td>
+
+                <td>
+                    <input type="text" name="pot_4" id="pot_4">
+                </td>
+
+                <td>
+                    <label for="pot_5">за час 05:</label>
+                </td>
+
+                <td>
+                    <input type="text" name="pot_5" id="pot_5">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="pot_6">за час 06:</label>
+                </td>
+
+                <td>
+                    <input type="text" name="pot_6" id="pot_6">
+                </td>
+
+                <td>
+                    <label for="pot_7">за час 07:</label>
+                </td>
+
+                <td>
+                    <input type="text" name="pot_7" id="pot_7">
+                </td>
+
+                <td>
+                    <label for="pot_8">за час 08:</label>
+                </td>
+
+                <td>
+                    <input type="text" name="pot_8" id="pot_8">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="pot_9">за час 09:</label>
+                </td>
+
+                <td>
+                    <input type="text" name="pot_9" id="pot_9">
+                </td>
+
+                <td>
+                    <label for="pot_10">за час 10:</label>
+                </td>
+
+                <td>
+                    <input type="text" name="pot_10" id="pot_10">
+                </td>
+
+                <td>
+                    <label for="pot_11">за час 11:</label>
+                </td>
+
+                <td>
+                    <input type="text" name="pot_11" id="pot_11">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="pot_12">за час 12:</label>
+                </td>
+
+                <td>
+                    <input type="text" name="pot_12" id="pot_12">
+                </td>
+
+                <td>
+                    <label for="pot_13">за час 13:</label>
+                </td>
+
+                <td>
+                    <input type="text" name="pot_13" id="pot_13">
+                </td>
+
+                <td>
+                    <label for="pot_14">за час 14:</label>
+                </td>
+
+                <td>
+                    <input type="text" name="pot_14" id="pot_14">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="pot_15">за час 15:</label>
+                </td>
+
+                <td>
+                    <input type="text" name="pot_15" id="pot_15">
+                </td>
+
+                <td>
+                    <label for="pot_16">за час 16:</label>
+                </td>
+
+                <td>
+                    <input type="text" name="pot_16" id="pot_16">
+                </td>
+
+                <td>
+                    <label for="pot_17">за час 17:</label>
+                </td>
+
+                <td>
+                    <input type="text" name="pot_17" id="pot_17">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="pot_18">за час 18:</label>
+                </td>
+
+                <td>
+                    <input type="text" name="pot_18" id="pot_18">
+                </td>
+
+                <td>
+                    <label for="pot_19">за час 19:</label>
+                </td>
+
+                <td>
+                    <input type="text" name="pot_19" id="pot_19">
+                </td>
+
+                <td>
+                    <label for="pot_20">за час 20:</label>
+                </td>
+
+                <td>
+                    <input type="text" name="pot_20" id="pot_20">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="pot_21">за час 21:</label>
+                </td>
+
+                <td>
+                    <input type="text" name="pot_21" id="pot_21">
+                </td>
+
+                <td>
+                    <label for="pot_22">за час 22:</label>
+                </td>
+
+                <td>
+                    <input type="text" name="pot_22" id="pot_22">
+                </td>
+
+                <td>
+                    <label for="pot_23">за час 23:</label>
+                </td>
+
+                <td>
+                    <input type="text" name="pot_23" id="pot_23">
+                </td>
+            </tr>
+        </table>
+
+        <h1>        Введите присоединённую мощность:</h1>
+            <label for="prisoed_moshnost_1">Присоединённая мощность(кВТ):</label>
+            <input type="text" name="prisoed_moshnost_1" id="prisoed_moshnost_1">
+
+        <h2>Характеристики накопителя</h2>
+
+        <h1>Введите КПД накопителя:</h1>
+            <label for="KPD_1">КПД накопителя:</label>
+            <input type="text" name="KPD_1" id="KPD_1">
+
+        <h1>Введите количество циклов зарядки и разрядки:</h1>
+            <label for="tcikli_zar_i_raz_1">Количество циклов зарядки и разрядки:</label>
+            <input type="text" name="tcikli_zar_i_raz_1" id="tcikli_zar_i_raz_1">
+
+        <h1>Введите стоимость ёмкости в руб/кВт*ч:</h1>
+            <label for="Stoimost_emkosti_nakop_1">Cтоимость ёмкости в руб/кВт*ч:</label>
+            <input type="text" name="Stoimost_emkosti_nakop_1" id="Stoimost_emkosti_nakop_1">
+
+        <h2>Цены на электроэнергию</h2>
+
+        <h1>Введите стоимость мощности генерации по ЦК 3,4,5,6:</h1>
+            <label for="Stoimost_PG_1">Cтоимость мощности генерации по ЦК 3,4,5,6:</label>
+            <input type="text" name="Stoimost_PG_1" id="Stoimost_PG_1">
+
+        <h1>Введите стоимость транспортной мощности по ЦК 4 и 6:</h1>
+            <label for="Stoimost_PT_1">Cтоимость транспортной мощности по ЦК 4 и 6:</label>
+            <input type="text" name="Stoimost_PT_1" id="Stoimost_PT_1">
+
+        <h1>Введите стоимость подключения:</h1>
+            <label for="Stoimost_podkl_1">Cтоимость подключения:</label>
+            <input type="text" name="Stoimost_podkl_1" id="Stoimost_podkl_1">
+
+
+        <h1>Введите пиковые часы:</h1>
+        <table>
+            <tr>
+                <td>
+                    <label for="pik_chasi_1">Пиковый час №1:</label>
+                </td>
+
+                <td>
+                    <input type="text" name="pik_chasi_1" id="pik_chasi_1">
+                </td>
+
+                <td>
+                    <label for="pik_chasi_2">Пиковый час №2:</label>
+                </td>
+
+                <td>
+                    <input type="text" name="pik_chasi_2" id="pik_chasi_2">
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="pik_chasi_3">Пиковый час №3:</label>
+                </td>
+
+                <td>
+                    <input type="text" name="pik_chasi_3" id="pik_chasi_3">
+                </td>
+
+                <td>
+                    <label for="pik_chasi_4">Пиковый час №4:</label>
+                </td>
+
+                <td>
+                    <input type="text" name="pik_chasi_4" id="pik_chasi_4">
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="pik_chasi_5">Пиковый час №5:</label>
+                </td>
+
+                <td>
+                    <input type="text" name="pik_chasi_5" id="pik_chasi_5">
+                </td>
+
+                <td>
+                    <label for="pik_chasi_6">Пиковый час №6:</label>
+                </td>
+
+                <td>
+                    <input type="text" name="pik_chasi_6" id="pik_chasi_6">
+                </td>
+
+            </tr>
+        </table>
+
+
+        <h1>Введите свою ценовую категорию:</h1>
+            <label for="CK_1">Ценовая категория:</label>
+            <input type="text" name="CK_1" id="CK_1">
+        <br>
+        <button type="submit">Отправить</button>
+        <p>asfkjalksfjlsafj{{ result }}</p>
+    </form>
 </body>
-</html>

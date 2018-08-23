@@ -1,0 +1,17 @@
+h1 {
+  font-size: 28px;
+  font-family: "Monaco", "Courier", monospace;
+  color: #aa0000;
+  padding-left:40px;
+}
+
+h2 {
+  font-size: 34px;
+  font-family: "Monaco", "Courier", monospace;
+  color: #770000;
+  padding-left:0px;
+}
+ body {
+    background: #bbaaaa; /* Цвет фона и путь к файлу */
+    color: #fff; /* Цвет текста */
+   }
