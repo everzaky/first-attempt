@@ -322,6 +322,39 @@
             <input type="text" name="CK_1" id="CK_1">
         <br>
         <button type="submit">Отправить</button>
-        <p>asfkjalksfjlsafj{{ result }}</p>
+        <p>Нужен ли вам такой аккамулятор{{ answer }}</p>
+        {% if answer == ': да' %}
+            <p>Характеристики аккамулятора:</p>
+            {% if npvpck > 0 %}
+                {% if npv0pck > 0 %}
+                    {% if pck > 0 %}
+                    <p>Если вы останетесь в той же ценовой категории и NPV = 0:</p>
+                    <p>Мощность аккамулятора: {{ moshnostnpv0pck }}</p>
+                    <p>Ёмкость аккамулятора: {{ emkostnpv0pck }}</p>
+                    {% endif %}
+                {% endif %}
+                {% if npvpck > 0 %}
+                    <P>Если вы останетесь в той же ценовой категории и максимальном NPV</P>
+                    <p>Мощность аккамулятора: {{ moshnostmaxnpvpck }}</p>
+                    <p>Ёмкость аккамулятора: {{ emkostmaxnpvpck }}</p>
+                    <p>NPV = {{ npvpck }}</p>
+                {% endif %}
+            {% endif %}
+            {% if npvsck > 0  %}
+                {% if  npv0sck > 0 %}
+                    {% if sck > 0 %}
+                        <p>При переходе из {{ CK }} в {{ CK1 }} и NPV = 0:</p>
+                        <p>Мощность аккамулятора: {{ moshnostnpv0sck }}</p>
+                        <p>Ёмкость аккамулятора: {{ emkostnpv0sck }}</p>
+                    {% endif %}
+                {% endif %}
+                {% if npvsck > 0%}
+                    <p>При переходе из {{ CK }} в {{ CK1 }} и максисальном NPV:</p>
+                    <p>Мощность аккамулятора: {{ moshnostmaxnpvsck }}</p>
+                    <p>Ёмкость аккамулятора: {{ emkostmaxnpvsck }}</p>
+                    <p>NPV = {{ npvsck }}</p>
+                {% endif %}
+            {% endif %}
+        {% endif %}
     </form>
 </body>
