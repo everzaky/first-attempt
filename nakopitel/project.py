@@ -243,7 +243,7 @@ def ver7_11_1(Potreblenie, Prisoed_moshnost, KPD, Tsikli_Zar_i_Razradki, Stoimos
             if c != c0 and c0 != 0:
                 k += 1
             c0 = c
-        if (c == c00 or c00 == 0)and(k > 0):
+        if (c == c00 or c00 == 0)and(k > 1):
             T = int(Tsikli_Zar_i_Razradki / (k - 1))
         else:
             T = int(Tsikli_Zar_i_Razradki / k)
