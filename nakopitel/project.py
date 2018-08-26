@@ -319,8 +319,8 @@ def ver7_11_1(Potreblenie, Prisoed_moshnost, KPD, Tsikli_Zar_i_Razradki, Stoimos
             NeZnayuKakNazvat1 = 1
             answer=": да"
             print('При NPV = 0, ёмкость накопителя равна', round(Spisok[i][0], 2), 'кВт*ч, мощность накопителя равна',round(Spisok[i][1], 2), 'кВт')
-            plt.plot(moshnosti0[i],Potreblenie)
-            plt.show()
+            #plt.plot(moshnosti0[i],Potreblenie)
+            #plt.show()
             emkostnpv0pck=round(Spisok[i][0], 2)
             moshnostnpv0pck=round(Spisok[i][1], 2)
             pck=1
@@ -331,6 +331,10 @@ def ver7_11_1(Potreblenie, Prisoed_moshnost, KPD, Tsikli_Zar_i_Razradki, Stoimos
             print('При переходе с ценовой категории', CK, 'на', CK + 2, 'и NPV = 0, ёмкость накопителя равна',round(Spisok[i][0], 2), 'кВт*ч, мощность накопителя равна', round(Spisok[i][1], 2), 'кВт')
             sck=1
             npv0sck=1
+            emkostnpv0sck=round(Spisok[i][0],2)
+            moshnostnpv0sck=round(Spisok[i][0],2)
+            #plt.plot(moshnosti0[i], Potreblenie)
+            #plt.show()
         if (NeZnayuKakNazvat1 == 1) and (Spisok[i][2] < 0):
             NeZnayuKakNazvat1 += 1
             #answer = ": да"
