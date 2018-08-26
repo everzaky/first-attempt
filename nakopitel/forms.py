@@ -28,8 +28,6 @@ class Postprice(forms.Form):
     KPD_1 = forms.FloatField()
     tcikli_zar_i_raz_1 = forms.IntegerField()
     Stoimost_emkosti_nakop_1 = forms.IntegerField()
-    Stoimost_PG_1 = forms.IntegerField()
-    Stoimost_PT_1 = forms.IntegerField()
     Stoimost_podkl_1 = forms.IntegerField()
     pik_chasi_1=forms.IntegerField()
     pik_chasi_2 = forms.IntegerField()

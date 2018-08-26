@@ -366,8 +366,8 @@ def ver7_11_1(Potreblenie, Prisoed_moshnost, KPD, Tsikli_Zar_i_Razradki, Stoimos
             npvsck=max_NPV0
             emkostmaxsck=round(Spisok[NPV0_max][0], 2)
             moshnostmaxsck=round(Spisok[NPV0_max][1], 2)
-        elif CK == 3 or CK == 4:
-            answer=": да"
+        elif ((CK == 3) or( CK == 4))and(NPV0_max):
+            answer=": нет"
             print('Вам не нужно менять ценовую категорию')
     return (answer,npv0pck,pck,moshnostnpv0pck,emkostnpv0pck,npvpck,emkostmaxpck,moshnostmaxpck,npv0sck,sck,emkostnpv0sck,moshnostnpv0sck,npvsck,emkostmaxsck,moshnostmaxsck)
     # ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
