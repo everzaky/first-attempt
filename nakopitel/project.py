@@ -1,4 +1,4 @@
-import matplotlib.pyplot as plt
+
 
 def ver7_11_1(Potreblenie, Prisoed_moshnost, KPD, Tsikli_Zar_i_Razradki, Stoimost_emkosti_nakop, Stoimost_PG,
               Stoimost_PT, Stoimost_podkl, pik_chasi, CK, Energy_price):

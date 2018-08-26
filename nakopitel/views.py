@@ -3,9 +3,6 @@ from .forms import Postprice
 from .models import Price
 from .project import ver7_11_1
 from django.http import  HttpResponse
-import matplotlib
-import sqlite3 as lite
-import sys
 from django.shortcuts import redirect
 
 def index(request):
