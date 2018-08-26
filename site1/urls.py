@@ -19,5 +19,5 @@ from django.conf.urls import include, url
 
 urlpatterns = [
     path(r'admin/', admin.site.urls),
-    path('',include('nakopitel.urls'))
+    path('',include('nakopitel.urls')),
 ]

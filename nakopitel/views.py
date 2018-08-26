@@ -1,7 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render,render_to_response
 from .forms import Postprice
 from .models import Price
 from .project import ver7_11_1
+from django.http import  HttpResponse
+
 import sqlite3 as lite
 import sys
 from django.shortcuts import redirect
@@ -67,3 +69,8 @@ def index(request):
             return render(request,'nakopitel/main.html', {'answer': answer, "npv0pck":npv0pck,"pck":pck,'emkostnpv0pck':emkostnpv0pck,'moshnostnpv0pck':moshnostnpv0pck,'npvpck':npvpck,'emkostmaxnpvpck':emkostmaxnpvpck,"moshnostmaxnpvpck":moshnostmaxnpvpck,'npvsck':npvsck,'sck':sck,'CK1':CK+2,'npv0sck':npv0sck,'emkostnpv0sck':emkostnpv0sck,'moshnostnpv0sck':moshnostnpv0sck,'emkostmaxnpvsck':emkostmaxnpvsck,'moshnostmaxnpvsck':moshnostmaxnpvsck,"CK":CK})
     return render(request, 'nakopitel/main.html', {'answer':":",'npv':-1,'pck':-1,'emkostnpv0pck':-1,'moshnostnpv0pck':-1,'moshnostmaxnpvpck':-1,'emkostmaxnpvpck':-1})
 # Create your views here.
+def hello(request):
+    return HttpResponse('Hello World!')
+
+def home(request):
+    return render_to_response('nakopitel/index.html', {'variable': 'world'})
