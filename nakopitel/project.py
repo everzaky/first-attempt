@@ -1,4 +1,4 @@
-
+import matplotlib.pyplot as plt
 
 def ver7_11_1(Potreblenie, Prisoed_moshnost, KPD, Tsikli_Zar_i_Razradki, Stoimost_emkosti_nakop, Stoimost_PG,
               Stoimost_PT, Stoimost_podkl, pik_chasi, CK, Energy_price):
@@ -319,6 +319,8 @@ def ver7_11_1(Potreblenie, Prisoed_moshnost, KPD, Tsikli_Zar_i_Razradki, Stoimos
             NeZnayuKakNazvat1 = 1
             answer=": да"
             print('При NPV = 0, ёмкость накопителя равна', round(Spisok[i][0], 2), 'кВт*ч, мощность накопителя равна',round(Spisok[i][1], 2), 'кВт')
+            plt.plot(moshnosti0[i],Potreblenie)
+            plt.show()
             emkostnpv0pck=round(Spisok[i][0], 2)
             moshnostnpv0pck=round(Spisok[i][1], 2)
             pck=1

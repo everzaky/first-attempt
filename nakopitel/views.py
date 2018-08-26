@@ -3,7 +3,7 @@ from .forms import Postprice
 from .models import Price
 from .project import ver7_11_1
 from django.http import  HttpResponse
-
+import matplotlib
 import sqlite3 as lite
 import sys
 from django.shortcuts import redirect
@@ -63,7 +63,7 @@ def index(request):
             prices4=[Price.objects.get(category_of_prisoed_mosh=cat, category=6).chas0,Price.objects.get(category_of_prisoed_mosh=cat, category=6).chas1,Price.objects.get(category_of_prisoed_mosh=cat, category=6).chas2,Price.objects.get(category_of_prisoed_mosh=cat, category=6).chas3,Price.objects.get(category_of_prisoed_mosh=cat, category=6).chas4,Price.objects.get(category_of_prisoed_mosh=cat, category=6).chas5,Price.objects.get(category_of_prisoed_mosh=cat, category=6).chas6,Price.objects.get(category_of_prisoed_mosh=cat, category=6).chas7,Price.objects.get(category_of_prisoed_mosh=cat, category=6).chas8,Price.objects.get(category_of_prisoed_mosh=cat, category=6).chas9,Price.objects.get(category_of_prisoed_mosh=cat, category=6).chas10,Price.objects.get(category_of_prisoed_mosh=cat, category=6).chas11,Price.objects.get(category_of_prisoed_mosh=cat, category=6).chas12,Price.objects.get(category_of_prisoed_mosh=cat, category=6).chas13,Price.objects.get(category_of_prisoed_mosh=cat, category=6).chas14,Price.objects.get(category_of_prisoed_mosh=cat, category=6).chas15,Price.objects.get(category_of_prisoed_mosh=cat, category=6).chas16,Price.objects.get(category_of_prisoed_mosh=cat, category=6).chas17,Price.objects.get(category_of_prisoed_mosh=cat, category=6).chas18,Price.objects.get(category_of_prisoed_mosh=cat, category=6).chas19,Price.objects.get(category_of_prisoed_mosh=cat, category=6).chas20,Price.objects.get(category_of_prisoed_mosh=cat, category=6).chas21,Price.objects.get(category_of_prisoed_mosh=cat, category=6).chas22,Price.objects.get(category_of_prisoed_mosh=cat, category=6).chas23]
             prices=[prices1,prices2,prices3,prices4]
             Stoimost_PG = Price.objects.get(category_of_pridoed_mosh=cat, category=3).Stoimost_PG
-            Stoimost_PT = Price.objects.get(category_of_prisoed_mosh=car, category=4).Stoimost_PT
+            Stoimost_PT = Price.objects.get(category_of_prisoed_mosh=cat, category=4).Stoimost_PT
             answer,npv0pck,pck,moshnostnpv0pck,emkostnpv0pck,npvpck,emkostmaxnpvpck,moshnostmaxnpvpck,npv0sck,sck,emkostnpv0sck,moshnostnpv0sck,npvsck,emkostmaxnpvsck,moshnostmaxnpvsck =ver7_11_1(potreblenie,prisoed_moshnost,kpd,tcikli_zar_i_raz,Stoimost_emkosti_nakop,Stoimost_PG,Stoimost_PT,Stoimost_podkl,pik_chasi,CK,prices)
             print(answer,npv0pck,pck,moshnostnpv0pck,emkostnpv0pck,npvpck,emkostmaxnpvpck,moshnostmaxnpvpck)
             return render(request,'nakopitel/main.html', {'answer': answer, "npv0pck":npv0pck,"pck":pck,'emkostnpv0pck':emkostnpv0pck,'moshnostnpv0pck':moshnostnpv0pck,'npvpck':npvpck,'emkostmaxnpvpck':emkostmaxnpvpck,"moshnostmaxnpvpck":moshnostmaxnpvpck,'npvsck':npvsck,'sck':sck,'CK1':CK+2,'npv0sck':npv0sck,'emkostnpv0sck':emkostnpv0sck,'moshnostnpv0sck':moshnostnpv0sck,'emkostmaxnpvsck':emkostmaxnpvsck,'moshnostmaxnpvsck':moshnostmaxnpvsck,"CK":CK})
