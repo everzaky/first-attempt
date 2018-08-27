@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f6dccc1-bab9-4e58-b940-c8be31f955bb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nakopitel/project.py" beforeDir="false" afterPath="$PROJECT_DIR$/nakopitel/project.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nakopitel/templates/nakopitel/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/nakopitel/templates/nakopitel/main.html" afterDir="false" />
-    </list>
+    <list default="true" id="7f6dccc1-bab9-4e58-b940-c8be31f955bb" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,13 +51,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="19" />
-          <entry key="html" value="2033" />
+          <entry key="html" value="2062" />
           <entry key="py" value="7640" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="2033" />
+          <entry key="HTML" value="2062" />
           <entry key="PLAIN_TEXT" value="19" />
           <entry key="Python" value="7638" />
           <entry key="SQL" value="2" />
@@ -138,10 +134,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nakopitel/project.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
+            <state relative-caret-position="6545">
               <caret line="385" column="46" selection-start-line="385" selection-start-column="46" selection-end-line="385" selection-end-column="46" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
@@ -170,11 +166,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nakopitel/templates/nakopitel/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="343" column="34" lean-forward="true" selection-start-line="343" selection-start-column="34" selection-end-line="343" selection-end-column="34" />
+            <state relative-caret-position="17">
+              <caret line="328" column="66" lean-forward="true" selection-start-line="328" selection-start-column="66" selection-end-line="328" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -221,7 +217,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="950" />
     <option name="width" value="979" />
     <option name="height" value="1040" />
@@ -337,6 +333,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20536913" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -558,22 +555,22 @@
     <entry file="file://$PROJECT_DIR$/site1/urls.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/nakopitel/templates/nakopitel/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="328" column="66" lean-forward="true" selection-start-line="328" selection-start-column="66" selection-end-line="328" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/nakopitel/project.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
+        <state relative-caret-position="6545">
           <caret line="385" column="46" selection-start-line="385" selection-start-column="46" selection-end-line="385" selection-end-column="46" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
             <element signature="e#14225#26225#0" />
             <element signature="e#14084#18862#1" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nakopitel/templates/nakopitel/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="343" column="34" lean-forward="true" selection-start-line="343" selection-start-column="34" selection-end-line="343" selection-end-column="34" />
         </state>
       </provider>
     </entry>
