@@ -312,22 +312,22 @@
             <input type="text" name="CK_1" id="CK_1">
         <br>
         <button type="submit">Отправить</button>
-        <p>Нужен ли вам такой аккамулятор{{ answer }}</p>
+        <p>Нужен ли вам такой аккумулятор{{ answer }}</p>
         {% if answer == ': да' %}
-            <p>Характеристики аккамулятора:</p>
+            <p>Характеристики аккумулятора:</p>
             {% if npvpck > 0 %}
                 {% if npv0pck > 0 %}
                     {% if pck > 0 %}
                         <p>Если вы останетесь в той же ценовой категории и NPV = 0:</p>
-                        <p>Мощность аккамулятора: {{ moshnostnpv0pck }}</p>
-                        <p>Ёмкость аккамулятора: {{ emkostnpv0pck }}</p>
+                        <p>Мощность аккумулятора: {{ moshnostnpv0pck }}</p>
+                        <p>Ёмкость аккумулятора: {{ emkostnpv0pck }}</p>
                         <img src="{% static 'css/npv=0pck.png' %}">
                     {% endif %}
                 {% endif %}
                 {% if npvpck > 0 %}
                     <P>Если вы останетесь в той же ценовой категории и максимальном NPV</P>
-                    <p>Мощность аккамулятора: {{ moshnostmaxnpvpck }}</p>
-                    <p>Ёмкость аккамулятора: {{ emkostmaxnpvpck }}</p>
+                    <p>Мощность аккумулятора: {{ moshnostmaxnpvpck }}</p>
+                    <p>Ёмкость аккумулятора: {{ emkostmaxnpvpck }}</p>
                     <p>NPV = {{ npvpck }}</p>
                     <img src="{% static 'css/npvmaxpck.png' %}">
                 {% endif %}
@@ -336,15 +336,15 @@
                 {% if  npv0sck > 0 %}
                     {% if sck > 0 %}
                         <p>При переходе из {{ CK }} в {{ CK1 }} и NPV = 0:</p>
-                        <p>Мощность аккамулятора: {{ moshnostnpv0sck }}</p>
-                        <p>Ёмкость аккамулятора: {{ emkostnpv0sck }}</p>
+                        <p>Мощность аккумулятора: {{ moshnostnpv0sck }}</p>
+                        <p>Ёмкость аккумулятора: {{ emkostnpv0sck }}</p>
                         <img src="{% static 'css/npv=0sck.png' %}">
                     {% endif %}
                 {% endif %}
                 {% if npvsck > 0%}
-                    <p>При переходе из {{ CK }} в {{ CK1 }} и максисальном NPV:</p>
-                    <p>Мощность аккамулятора: {{ moshnostmaxnpvsck }}</p>
-                    <p>Ёмкость аккамулятора: {{ emkostmaxnpvsck }}</p>
+                    <p>При переходе из {{ CK }} в {{ CK1 }} и максимальном NPV:</p>
+                    <p>Мощность аккумулятора: {{ moshnostmaxnpvsck }}</p>
+                    <p>Ёмкость аккумулятора: {{ emkostmaxnpvsck }}</p>
                     <p>NPV = {{ npvsck }}</p>
                     <img src="{% static 'css/npvmaxsck.png' %}">
                 {% endif %}
