@@ -330,6 +330,7 @@ def ver7_11_1(Potreblenie, Prisoed_moshnost, KPD, Tsikli_Zar_i_Razradki, Stoimos
             print(Spisok[i][4])
             plt.plot(time,Spisok[i][4],Potreblenie)
             plt.savefig('/home/NeZnayuKakNazvat/first-attempt/nakopitel/static/css/npv=0pck'+'.png',format='png')
+            plt.clf()
             emkostnpv0pck=round(Spisok[i][0], 2)
             moshnostnpv0pck=round(Spisok[i][1], 2)
             pck=1
@@ -343,6 +344,7 @@ def ver7_11_1(Potreblenie, Prisoed_moshnost, KPD, Tsikli_Zar_i_Razradki, Stoimos
             print(Spisok[i][4])
             plt.plot(time,Spisok[i][4],Potreblenie)
             plt.savefig('/home/NeZnayuKakNazvat/first-attempt/nakopitel/static/css/npv=0sck' + '.png', format='png')
+            plt.clf()
             emkostnpv0sck=round(Spisok[i][0],2)
             moshnostnpv0sck=round(Spisok[i][0],2)
             #plt.plot(moshnosti0[i], Potreblenie)
@@ -376,6 +378,7 @@ def ver7_11_1(Potreblenie, Prisoed_moshnost, KPD, Tsikli_Zar_i_Razradki, Stoimos
             print(Spisok[NPV_max][4])
             plt.plot(time,Spisok[NPV_max][4],Potreblenie)
             plt.savefig('/home/NeZnayuKakNazvat/first-attempt/nakopitel/static/css/npvmaxpck' + '.png', format='png')
+            plt.clf()
             emkostmaxpck=round(Spisok[NPV_max][0], 2)
             moshnostmaxpck= round(Spisok[NPV_max][1], 2)
         else:
@@ -388,6 +391,7 @@ def ver7_11_1(Potreblenie, Prisoed_moshnost, KPD, Tsikli_Zar_i_Razradki, Stoimos
             print(Spisok[NPV0_max][4])
             plt.plot(time,Spisok[NPV0_max][4],Potreblenie)
             plt.savefig('/home/NeZnayuKakNazvat/first-attempt/nakopitel/static/css/npvmaxsck' + '.png', format='png')
+            plt.clf()
             emkostmaxsck=round(Spisok[NPV0_max][0], 2)
             moshnostmaxsck=round(Spisok[NPV0_max][1], 2)
         elif ((CK == 3) or( CK == 4))and(max_NPV0 < 0):
