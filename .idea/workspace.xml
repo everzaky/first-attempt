@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f6dccc1-bab9-4e58-b940-c8be31f955bb" name="Default Changelist" comment="" />
+    <list default="true" id="7f6dccc1-bab9-4e58-b940-c8be31f955bb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/nakopitel/project.py" beforeDir="false" afterPath="$PROJECT_DIR$/nakopitel/project.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,14 +54,14 @@
         <counts>
           <entry key="gitignore" value="19" />
           <entry key="html" value="2062" />
-          <entry key="py" value="7640" />
+          <entry key="py" value="7685" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="2062" />
           <entry key="PLAIN_TEXT" value="19" />
-          <entry key="Python" value="7638" />
+          <entry key="Python" value="7683" />
           <entry key="SQL" value="2" />
         </counts>
       </usages-collector>
@@ -137,10 +139,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nakopitel/project.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6545">
-              <caret line="385" column="46" selection-start-line="385" selection-start-column="46" selection-end-line="385" selection-end-column="46" />
+            <state relative-caret-position="393">
+              <caret line="738" lean-forward="true" selection-start-line="738" selection-end-line="738" />
               <folding>
-                <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#240#5019#1" />
                 <element signature="e#14225#26225#0" />
                 <element signature="e#14084#18862#1" />
               </folding>
@@ -206,8 +208,8 @@
         <option value="$PROJECT_DIR$/nakopitel/forms.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/nakopitel/views.py" />
-        <option value="$PROJECT_DIR$/nakopitel/project.py" />
         <option value="$PROJECT_DIR$/nakopitel/templates/nakopitel/main.html" />
+        <option value="$PROJECT_DIR$/nakopitel/project.py" />
       </list>
     </option>
   </component>
@@ -333,7 +335,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20536913" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -517,17 +518,6 @@
     <entry file="file://$PROJECT_DIR$/nakopitel/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/nakopitel/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-          <folding>
-            <marker date="1535291123544" expanded="true" signature="217:218" ph="..." />
-            <marker date="1535291123544" expanded="true" signature="11003:11004" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nakopitel/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -542,6 +532,13 @@
     <entry file="file://$PROJECT_DIR$/nakopitel/models.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/nakopitel/templates/nakopitel/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="328" column="66" lean-forward="true" selection-start-line="328" selection-start-column="66" selection-end-line="328" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/nakopitel/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -555,19 +552,23 @@
     <entry file="file://$PROJECT_DIR$/site1/urls.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/nakopitel/templates/nakopitel/main.html">
+    <entry file="file://$PROJECT_DIR$/nakopitel/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="328" column="66" lean-forward="true" selection-start-line="328" selection-start-column="66" selection-end-line="328" selection-end-column="66" />
+        <state relative-caret-position="68">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+          <folding>
+            <marker date="1535291123544" expanded="true" signature="217:218" ph="..." />
+            <marker date="1535291123544" expanded="true" signature="11003:11004" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nakopitel/project.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6545">
-          <caret line="385" column="46" selection-start-line="385" selection-start-column="46" selection-end-line="385" selection-end-column="46" />
+        <state relative-caret-position="393">
+          <caret line="738" lean-forward="true" selection-start-line="738" selection-end-line="738" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#240#5019#1" />
             <element signature="e#14225#26225#0" />
             <element signature="e#14084#18862#1" />
           </folding>
