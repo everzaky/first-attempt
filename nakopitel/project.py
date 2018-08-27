@@ -326,8 +326,8 @@ def ver7_11_1(Potreblenie, Prisoed_moshnost, KPD, Tsikli_Zar_i_Razradki, Stoimos
         if (Spisok[i][2] >= 0) and (NeZnayuKakNazvat1 == 0):
             NeZnayuKakNazvat1 = 1
             answer=": да"
-            print('При NPV = 0, ёмкость накопителя равна', round(Spisok[i][0], 2), 'кВт*ч, мощность накопителя равна',round(Spisok[i][1], 2), 'кВт')
-            print(Spisok[i][4])
+            #print('При NPV = 0, ёмкость накопителя равна', round(Spisok[i][0], 2), 'кВт*ч, мощность накопителя равна',round(Spisok[i][1], 2), 'кВт')
+            #print(Spisok[i][4])
             plt.plot(time,Spisok[i][4],Potreblenie)
             plt.savefig('/home/NeZnayuKakNazvat/first-attempt/nakopitel/static/css/npv=0pck'+'.png',format='png')
             plt.clf()
@@ -338,10 +338,10 @@ def ver7_11_1(Potreblenie, Prisoed_moshnost, KPD, Tsikli_Zar_i_Razradki, Stoimos
         if (Spisok[i][3] >= 0) and (NeZnayuKakNazvat2 == 0) and (CK == 3 or CK == 4):
             NeZnayuKakNazvat2 = 1
             answer = ": да"
-            print('При переходе с ценовой категории', CK, 'на', CK + 2, 'и NPV = 0, ёмкость накопителя равна',round(Spisok[i][0], 2), 'кВт*ч, мощность накопителя равна', round(Spisok[i][1], 2), 'кВт')
+            #print('При переходе с ценовой категории', CK, 'на', CK + 2, 'и NPV = 0, ёмкость накопителя равна',round(Spisok[i][0], 2), 'кВт*ч, мощность накопителя равна', round(Spisok[i][1], 2), 'кВт')
             sck=1
             npv0sck=1
-            print(Spisok[i][4])
+            #print(Spisok[i][4])
             plt.plot(time,Spisok[i][4],Potreblenie)
             plt.savefig('/home/NeZnayuKakNazvat/first-attempt/nakopitel/static/css/npv=0sck' + '.png', format='png')
             plt.clf()
@@ -373,9 +373,9 @@ def ver7_11_1(Potreblenie, Prisoed_moshnost, KPD, Tsikli_Zar_i_Razradki, Stoimos
     else:
         if max_NPV > 0:
             answer=": да"
-            print('При максимальном NPV, ёмкость накопителя равна', round(Spisok[NPV_max][0], 2),'кВт*ч, мощность накопителя равна', round(Spisok[NPV_max][1], 2), "кВт, NPV равен",round(Spisok[NPV_max][2], 2), 'руб.')
+            #print('При максимальном NPV, ёмкость накопителя равна', round(Spisok[NPV_max][0], 2),'кВт*ч, мощность накопителя равна', round(Spisok[NPV_max][1], 2), "кВт, NPV равен",round(Spisok[NPV_max][2], 2), 'руб.')
             npvpck = max_NPV
-            print(Spisok[NPV_max][4])
+            #print(Spisok[NPV_max][4])
             plt.plot(time,Spisok[NPV_max][4],Potreblenie)
             plt.savefig('/home/NeZnayuKakNazvat/first-attempt/nakopitel/static/css/npvmaxpck' + '.png', format='png')
             plt.clf()
@@ -383,12 +383,12 @@ def ver7_11_1(Potreblenie, Prisoed_moshnost, KPD, Tsikli_Zar_i_Razradki, Stoimos
             moshnostmaxpck= round(Spisok[NPV_max][1], 2)
         else:
             answer=": нет"
-            print('Вам не нужен аккумулятор при данной ценовой категории')
+            #print('Вам не нужен аккумулятор при данной ценовой категории')
         if CK == 3 or CK == 4 and max_NPV0 > 0:
             answer=': да'
-            print('При переходе с ценовой категории', CK, 'на', CK + 2, 'и максимальном NPV, ёмкость накопителя равна',round(Spisok[NPV0_max][0], 2), 'кВт*ч, мощность накопителя равна', round(Spisok[NPV0_max][1], 2),"кВт, NPV равен", round(Spisok[NPV0_max][3], 2), 'руб.')
+            #print('При переходе с ценовой категории', CK, 'на', CK + 2, 'и максимальном NPV, ёмкость накопителя равна',round(Spisok[NPV0_max][0], 2), 'кВт*ч, мощность накопителя равна', round(Spisok[NPV0_max][1], 2),"кВт, NPV равен", round(Spisok[NPV0_max][3], 2), 'руб.')
             npvsck=max_NPV0
-            print(Spisok[NPV0_max][4])
+            #print(Spisok[NPV0_max][4])
             plt.plot(time,Spisok[NPV0_max][4],Potreblenie)
             plt.savefig('/home/NeZnayuKakNazvat/first-attempt/nakopitel/static/css/npvmaxsck' + '.png', format='png')
             plt.clf()
@@ -396,7 +396,7 @@ def ver7_11_1(Potreblenie, Prisoed_moshnost, KPD, Tsikli_Zar_i_Razradki, Stoimos
             moshnostmaxsck=round(Spisok[NPV0_max][1], 2)
         elif ((CK == 3) or( CK == 4))and(max_NPV0 < 0):
             answer=": нет"
-            print('Вам не нужно менять ценовую категорию')
+            #print('Вам не нужно менять ценовую категорию')
     return (answer,npv0pck,pck,moshnostnpv0pck,emkostnpv0pck,npvpck,emkostmaxpck,moshnostmaxpck,npv0sck,sck,emkostnpv0sck,moshnostnpv0sck,npvsck,emkostmaxsck,moshnostmaxsck,ser)
     # ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
