@@ -62,9 +62,9 @@ def index(request):
             Stoimost_PG = Price.objects.get(category_of_prisoed_mosh=cat, category=3).Stoimost_PG
             Stoimost_PT = Price.objects.get(category_of_prisoed_mosh=cat, category=4).Stoimost_PT
             print(Stoimost_PT,Stoimost_PG)
-            answer,npv0pck,pck,moshnostnpv0pck,emkostnpv0pck,npvpck,emkostmaxnpvpck,moshnostmaxnpvpck,npv0sck,sck,emkostnpv0sck,moshnostnpv0sck,npvsck,emkostmaxnpvsck,moshnostmaxnpvsck =ver7_11_1(potreblenie,prisoed_moshnost,kpd,tcikli_zar_i_raz,Stoimost_emkosti_nakop,Stoimost_PG,Stoimost_PT,Stoimost_podkl,pik_chasi,CK,prices)
+            answer,npv0pck,pck,moshnostnpv0pck,emkostnpv0pck,npvpck,emkostmaxnpvpck,moshnostmaxnpvpck,npv0sck,sck,emkostnpv0sck,moshnostnpv0sck,npvsck,emkostmaxnpvsck,moshnostmaxnpvsck,ser =ver7_11_1(potreblenie,prisoed_moshnost,kpd,tcikli_zar_i_raz,Stoimost_emkosti_nakop,Stoimost_PG,Stoimost_PT,Stoimost_podkl,pik_chasi,CK,prices)
             print(answer,npv0pck,pck,moshnostnpv0pck,emkostnpv0pck,npvpck,emkostmaxnpvpck,moshnostmaxnpvpck,npv0sck,sck,emkostnpv0sck,moshnostnpv0sck,npvsck,emkostmaxnpvsck,moshnostmaxnpvsck)
-            return render(request,'nakopitel/main.html', {'answer': answer, "npv0pck":npv0pck,"pck":pck,'emkostnpv0pck':emkostnpv0pck,'emkostnpv0sck':emkostnpv0sck,'moshnostnpv0pck':moshnostnpv0pck,'npvpck':npvpck,'emkostmaxnpvpck':emkostmaxnpvpck,"moshnostmaxnpvpck":moshnostmaxnpvpck,'npvsck':npvsck,'sck':sck,'CK1':CK+2,'npv0sck':npv0sck,'moshnostnpv0sck':moshnostnpv0sck,'emkostmaxnpvsck':emkostmaxnpvsck,'moshnostmaxnpvsck':moshnostmaxnpvsck,"CK":CK})
+            return render(request,'nakopitel/main.html', {'answer': answer, "npv0pck":npv0pck,"pck":pck,'emkostnpv0pck':emkostnpv0pck,'emkostnpv0sck':emkostnpv0sck,'moshnostnpv0pck':moshnostnpv0pck,'npvpck':npvpck,'emkostmaxnpvpck':emkostmaxnpvpck,"moshnostmaxnpvpck":moshnostmaxnpvpck,'ser':ser,'npvsck':npvsck,'sck':sck,'CK1':CK+2,'npv0sck':npv0sck,'moshnostnpv0sck':moshnostnpv0sck,'emkostmaxnpvsck':emkostmaxnpvsck,'moshnostmaxnpvsck':moshnostmaxnpvsck,"CK":CK})
     return render(request, 'nakopitel/main.html', {'answer':":",'npv':-1,'pck':-1,'emkostnpv0pck':-1,'moshnostnpv0pck':-1,'moshnostmaxnpvpck':-1,'emkostmaxnpvpck':-1})
 # Create your views here.
 def hello(request):

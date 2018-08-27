@@ -321,6 +321,7 @@ def ver7_11_1(Potreblenie, Prisoed_moshnost, KPD, Tsikli_Zar_i_Razradki, Stoimos
     emkostmaxsck = 0
     emkostnpv0sck = 0
     moshnostnpv0pck = 0
+    ser=str(os.path)
     for i in range(len(Spisok)):
         if (Spisok[i][2] >= 0) and (NeZnayuKakNazvat1 == 0):
             NeZnayuKakNazvat1 = 1
@@ -392,7 +393,7 @@ def ver7_11_1(Potreblenie, Prisoed_moshnost, KPD, Tsikli_Zar_i_Razradki, Stoimos
         elif ((CK == 3) or( CK == 4))and(max_NPV0 < 0):
             answer=": нет"
             print('Вам не нужно менять ценовую категорию')
-    return (answer,npv0pck,pck,moshnostnpv0pck,emkostnpv0pck,npvpck,emkostmaxpck,moshnostmaxpck,npv0sck,sck,emkostnpv0sck,moshnostnpv0sck,npvsck,emkostmaxsck,moshnostmaxsck)
+    return (answer,npv0pck,pck,moshnostnpv0pck,emkostnpv0pck,npvpck,emkostmaxpck,moshnostmaxpck,npv0sck,sck,emkostnpv0sck,moshnostnpv0sck,npvsck,emkostmaxsck,moshnostmaxsck,ser)
     # ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 

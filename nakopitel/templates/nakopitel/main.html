@@ -305,7 +305,7 @@
 
             </tr>
         </table>
-
+        <p>{{ ser }}</p>
 
         <h1>Введите свою ценовую категорию:</h1>
             <label for="CK_1">Ценовая категория:</label>
@@ -321,14 +321,12 @@
                         <p>Если вы останетесь в той же ценовой категории и NPV = 0:</p>
                         <p>Мощность аккамулятора: {{ moshnostnpv0pck }}</p>
                         <p>Ёмкость аккамулятора: {{ emkostnpv0pck }}</p>
-                        <img src="{%  static "css/npv=0pck.png" %}">
                     {% endif %}
                 {% endif %}
                 {% if npvpck > 0 %}
                     <P>Если вы останетесь в той же ценовой категории и максимальном NPV</P>
                     <p>Мощность аккамулятора: {{ moshnostmaxnpvpck }}</p>
                     <p>Ёмкость аккамулятора: {{ emkostmaxnpvpck }}</p>
-                    <img src="{% static 'css/npvmaxpck.png' %}">
                     <p>NPV = {{ npvpck }}</p>
                 {% endif %}
             {% endif %}
@@ -338,7 +336,6 @@
                         <p>При переходе из {{ CK }} в {{ CK1 }} и NPV = 0:</p>
                         <p>Мощность аккамулятора: {{ moshnostnpv0sck }}</p>
                         <p>Ёмкость аккамулятора: {{ emkostnpv0sck }}</p>
-                        <img src="{% static "css/npv=0sck.png" %}">
                     {% endif %}
                 {% endif %}
                 {% if npvsck > 0%}
@@ -346,7 +343,6 @@
                     <p>Мощность аккамулятора: {{ moshnostmaxnpvsck }}</p>
                     <p>Ёмкость аккамулятора: {{ emkostmaxnpvsck }}</p>
                     <p>NPV = {{ npvsck }}</p>
-                    <img src="{% static 'css/npvmaxsck.png' %}">                    
                 {% endif %}
             {% endif %}
         {% endif %}
