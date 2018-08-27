@@ -1,6 +1,7 @@
 import matplotlib as mpl
 mpl.use('Agg')
 import matplotlib.pyplot as plt
+import os
 import numpy as np
 
 
@@ -326,8 +327,8 @@ def ver7_11_1(Potreblenie, Prisoed_moshnost, KPD, Tsikli_Zar_i_Razradki, Stoimos
             answer=": да"
             print('При NPV = 0, ёмкость накопителя равна', round(Spisok[i][0], 2), 'кВт*ч, мощность накопителя равна',round(Spisok[i][1], 2), 'кВт')
             print(Spisok[i][4])
-            plt.plot(time,Spisok[i][4],Potreblenie)
-            plt.savefig('/static/css/npv=0pck'+'.png',format='png')
+#            plt.plot(time,Spisok[i][4],Potreblenie)
+ #           plt.savefig('/static/css/npv=0pck'+'.png',format='png')
             emkostnpv0pck=round(Spisok[i][0], 2)
             moshnostnpv0pck=round(Spisok[i][1], 2)
             pck=1
@@ -339,8 +340,8 @@ def ver7_11_1(Potreblenie, Prisoed_moshnost, KPD, Tsikli_Zar_i_Razradki, Stoimos
             sck=1
             npv0sck=1
             print(Spisok[i][4])
-            plt.plot(time,Spisok[i][4],Potreblenie)
-            plt.savefig('/static/css/npv=0sck' + '.png', format='png')
+  #          plt.plot(time,Spisok[i][4],Potreblenie)
+   #         plt.savefig('/static/css/npv=0sck' + '.png', format='png')
             emkostnpv0sck=round(Spisok[i][0],2)
             moshnostnpv0sck=round(Spisok[i][0],2)
             #plt.plot(moshnosti0[i], Potreblenie)
@@ -372,8 +373,8 @@ def ver7_11_1(Potreblenie, Prisoed_moshnost, KPD, Tsikli_Zar_i_Razradki, Stoimos
             print('При максимальном NPV, ёмкость накопителя равна', round(Spisok[NPV_max][0], 2),'кВт*ч, мощность накопителя равна', round(Spisok[NPV_max][1], 2), "кВт, NPV равен",round(Spisok[NPV_max][2], 2), 'руб.')
             npvpck = max_NPV
             print(Spisok[NPV_max][4])
-            plt.plot(time,Spisok[NPV_max][4],Potreblenie)
-            plt.savefig('/static/css/npvmaxpck' + '.png', format='png')
+    #        plt.plot(time,Spisok[NPV_max][4],Potreblenie)
+     #       plt.savefig('/static/css/npvmaxpck' + '.png', format='png')
             emkostmaxpck=round(Spisok[NPV_max][0], 2)
             moshnostmaxpck= round(Spisok[NPV_max][1], 2)
         else:
@@ -384,8 +385,8 @@ def ver7_11_1(Potreblenie, Prisoed_moshnost, KPD, Tsikli_Zar_i_Razradki, Stoimos
             print('При переходе с ценовой категории', CK, 'на', CK + 2, 'и максимальном NPV, ёмкость накопителя равна',round(Spisok[NPV0_max][0], 2), 'кВт*ч, мощность накопителя равна', round(Spisok[NPV0_max][1], 2),"кВт, NPV равен", round(Spisok[NPV0_max][3], 2), 'руб.')
             npvsck=max_NPV0
             print(Spisok[NPV0_max][4])
-            plt.plot(time,Spisok[NPV0_max][4],Potreblenie)
-            plt.savefig('/static/css/npvmaxsck' + '.png', format='png')
+      #      plt.plot(time,Spisok[NPV0_max][4],Potreblenie)
+       #     plt.savefig('/static/css/npvmaxsck' + '.png', format='png')
             emkostmaxsck=round(Spisok[NPV0_max][0], 2)
             moshnostmaxsck=round(Spisok[NPV0_max][1], 2)
         elif ((CK == 3) or( CK == 4))and(max_NPV0 < 0):
